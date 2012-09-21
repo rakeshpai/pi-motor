@@ -20,6 +20,8 @@ The L293 and similar ICs are among the most common motor drivers for DC motors. 
 
 I've been using the L293D IC in my projects, wired up to the Raspberry Pi in the following fashion:
 
+![Fritzing connection diagram](https://raw.github.com/rakeshpai/pi-motor/master/assets/L293D%20sketch_bb.png Fritzing connection diagram)
+
 Note that I've provided the 3v3 output from the Pi to the Vcc1 of the IC, and not the 5v from the Pi. Supplying the 5v seemed to cause the IC to draw huge amounts of current, overheating the IC and preventing the Pi from booting up. I guess that's not such a good thing. The 3v3 output from the Pi worked just fine.
 
 Also note that I've hardwired the enable pin to 3v3, rather than using a separate GPIO pin to set this flag. I've seen a lot of people do this, so I did it too. If I'm wrong, please let me know! This module allows you both modes of operation - having the enable pin hardwired, or specified using a GPIO pin. The latter is untested, though there's no reason it shouldn't work.
