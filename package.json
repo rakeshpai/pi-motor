@@ -1,0 +1,33 @@
+{
+  "author": "Rakesh Pai <rakeshpai@gmail.com>",
+  "name": "pi-motor",
+  "description": "A simple helper for L293 and compatible dual-half-bridge ICs for motor control using the GPIO pins of the Raspberry Pi.",
+  "version": "0.0.1",
+  "main": "./pi-motor",
+  "repository": {
+    "url": ""
+  },
+  "dependencies": {
+    "pi-gpio": "0.0.x",
+    "async": "0.1.x"
+  },
+  "devDependencies": {
+    "mocha": "1.x",
+    "should": "1.x"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --reporter spec"
+  },
+  "tags": [
+    "raspberry",
+    "pi",
+    "gpio",
+    "L293",
+    "motor",
+    "driver"
+  ]
+}
