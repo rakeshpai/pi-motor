@@ -20,7 +20,7 @@ The L293 and similar ICs are among the most common motor drivers for DC motors. 
 
 I've been using the L293D IC in my projects, wired up to the Raspberry Pi in the following fashion:
 
-![Fritzing connection diagram](https://raw.github.com/rakeshpai/pi-motor/master/assets/L293D%20sketch_bb.png Fritzing connection diagram)
+<img src="https://raw.github.com/rakeshpai/pi-motor/master/assets/L293D%20sketch_bb.png" alt="Fritzing connection diagram">
 
 Note that I've provided the 3v3 output from the Pi to the Vcc1 of the IC, and not the 5v from the Pi. Supplying the 5v seemed to cause the IC to draw huge amounts of current, overheating the IC and preventing the Pi from booting up. I guess that's not such a good thing. The 3v3 output from the Pi worked just fine.
 
